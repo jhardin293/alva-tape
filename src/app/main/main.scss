@@ -13,12 +13,8 @@ img{
     background-position: center;
   }
 }
-
 .album-image{
-    min-height: 266px;
-    min-width: 266px;
-    height: 100%;
-    width: 100%;
+  margin: 0;
 }
 
 .art-overlay{
@@ -26,4 +22,8 @@ img{
   position: absolute;
   height: 100%;
   width: 100%;
+}
+
+.action-button, .sub-action{
+  background-color: $action-teal !important;
 }
