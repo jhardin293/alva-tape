@@ -47,3 +47,8 @@ Notes
  - It would be cool to have a fetch album cover feature. Lets say the artist wants to submit a streaming service link to their album. The app will Automatically grab the album art
  - Further down the line It would be cool to have artist/album/song recommendation.
  - Should the app allow you the artist to upload there songs? and Users stream from app? 
+
+/* bounds: */
+/* Shape: */
+opacity: 0.53;
+background: #386E9C;

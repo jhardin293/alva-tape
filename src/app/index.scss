@@ -10,6 +10,9 @@
 html {
   font-family: 'Roboto Slab', serif;
 }
+body,html{
+  height: 100%;
+}
 
 [layout=row] {
   flex-direction: row;
@@ -60,6 +63,14 @@ section.jumbotron {
     }
   }
 }
+
+/* Colors */
+$purple: #27153D;
+$action-teal: #00D39B;
+$wavey-blue: #386E9C;
+$line-grey: #979797;
+
+
 
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
