@@ -1,0 +1,49 @@
+Create a QR code that will allow the user to download an artists music. The interface should present the user with different download options. For example Spotify, google music, apple music or regular download.
+
+The artist should have a dashboard where they can submit different albums on multiple services. Each album will have one unique QR code. The artist should also be present with metrics about users that downloaded their track. Including, demographics, age gender interest.
+
+This will be a benefit to the artist because it will allow them to pass out a physical item that is current with the times. The age of CD’s is coming to an end. Users are listing and sharing music with there phones. 
+
+Revenue should be generated in two parts. One an advertiser can use the “link page” to advertise there product. Secondly an artist can pay for a premium tier for better user/fan metrics. Similar to the Soundcloud. Also take a look at how link shorteners are able to provided metrics to there users.
+
+One problem that needs to be solved is how does a a artist package the link? What will be the format? Should our site offer packaging options? How much would that cost to manufacture? It would benefit the artist of the site would allow them to design there own link cover within the interface. 
+
+Steps to get started.
+
+Research
+ - *How to gather analytics from qr codes?
+ - http://www.scanlife.com/analytics-engine metrics
+   - Cb link https://www.crunchbase.com/organization/scanbuy
+   - Code name
+   - Top codes scanned
+   - Number of unique users
+   - Handset operating system
+   - Handset model
+   - Time stamp
+   - Date
+   - Country of origin
+ - https://www.tagginn.com/
+   - Bounce rate on the landing pages.
+   - Time spent on the landing pages.
+   - Total pageviews for the period.
+   - Other types of traffic coming to the site
+   - Demographics.
+   - Devices used.
+   - Location of the user.
+
+
+Services to support 
+ - http://www.apple.com/ca/music/
+ - https://www.youtube.com/
+ - https://bandcamp.com/
+ - https://www.spotify.com/us/
+ - https://soundcloud.com
+ - https://play.google.com/music/
+
+Produce an MVP (this will evolve)
+- Create a mobile landing page for artist links
+
+Notes
+ - It would be cool to have a fetch album cover feature. Lets say the artist wants to submit a streaming service link to their album. The app will Automatically grab the album art
+ - Further down the line It would be cool to have artist/album/song recommendation.
+ - Should the app allow you the artist to upload there songs? and Users stream from app? 
