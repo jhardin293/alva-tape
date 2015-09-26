@@ -5,17 +5,23 @@ div(layout='column')
         md-button(class='md-icon-button',aria-label='social' )
           md-icon( md-svg-icon='../../assets/icons/menu.svg')
         .nav-icon
-    md-card.card-image.album-image
-      img(src='../../assets/images/tokimonsta_halfshadows.jpg')
-    md-fab-speed-dial(md-open='main.isOpen'
-    ,md-direction='{{vm.selectedDirection}}', ng-class='main.selectedMode')
-      md-fab-trigger
-        md-button.md-fab.md-warn.action-button(aria-label='social')
-          md-icon(md-svg-src='../../assets/icons/social.svg')
-      md-fab-actions
-        md-button.md-fab.md-raised.md-mini.sub-action
-          md-icon(md-svg-src='../../assets/icons/twitter.svg',aria-label='twitter')
-        md-button.md-fab.md-raised.md-mini.sub-action
-          md-icon(md-svg-src='../../assets/icons/instagram.svg',aria-label='instagram')
-        md-button.md-fab.md-raised.md-mini.sub-action
-          md-icon(md-svg-src='../../assets/icons/snapchat.svg',aria-label='snapchat')
+      md-card.card-image.album-image
+        img(src='../../assets/images/tokimonsta_halfshadows.jpg')
+      .content-body
+        .social-action
+          md-fab-speed-dial(md-open='false',md-direction='up', ng-class='main.selectedMode')
+            md-fab-trigger
+              md-button.md-fab.md-warn.action-button.social-button(aria-label='social')
+                md-icon(md-svg-src='../../assets/icons/social.svg')
+            md-fab-actions.social-options
+              md-button.md-fab.md-raised.md-mini.sub-action
+                md-icon(md-svg-src='../../assets/icons/twitter.svg',aria-label='twitter')
+              md-button.md-fab.md-raised.md-mini.sub-action
+                md-icon(md-svg-src='../../assets/icons/instagram.svg',aria-label='instagram')
+              md-button.md-fab.md-raised.md-mini.sub-action
+                md-icon(md-svg-src='../../assets/icons/snapchat.svg',aria-label='snapchat')
+        h1 Test
+        h1 Test
+        h1 Test
+        h1 Test
+        h1 Test

@@ -27,3 +27,15 @@ img{
 .action-button, .sub-action{
   background-color: $action-teal !important;
 }
+
+.social-button{
+  position: absolute;
+  top: -28px;
+  right: 0;
+}
+
+.social-options{
+  position: absolute;
+  top: -185px;
+  right: 11px;
+}
