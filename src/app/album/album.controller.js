@@ -3,10 +3,10 @@
 
   angular
     .module('alvaTape')
-    .controller('MainController', MainController);
+    .controller('AlbumController', AlbumController);
 
   /** @ngInject */
-  function MainController() {
+  function AlbumController() {
     var vm = this;
 
     vm.selectedMode = 'md-fling';

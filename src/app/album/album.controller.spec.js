@@ -6,7 +6,7 @@
     beforeEach(module('alvaTape'));
 
     it('should define more than 5 awesome things', inject(function($controller) {
-      var vm = $controller('MainController');
+      var vm = $controller('AlbumController');
 
       expect(angular.isArray(vm.awesomeThings)).toBeTruthy();
       expect(vm.awesomeThings.length > 5).toBeTruthy();
