@@ -26,7 +26,8 @@ div(layout='column')
                 md-icon(md-svg-src='../../assets/icons/snapchat.svg',aria-label='snapchat')
         .stream
           h1 Stream
-          .stream-content(layout="row", ng-repeat='service in main.streamingServices')
-            md-button(href='#')
-              img(flex="33", ng-src='{{service.logo}}')
-              {{service.name}}
+          md-list
+            md-list-item.stream-content(md-ink-ripple, layout="row", ng-repeat='service in main.streamingServices')
+              img.md-avatar(ng-src='{{service.logo}}')
+              .md-list-item-text(layout="column")
+                p {{service.name}}
