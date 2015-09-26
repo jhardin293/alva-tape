@@ -7,15 +7,23 @@
 
   /** @ngInject */
   function routeConfig($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider.otherwise('/album');
+
     $stateProvider
-      .state('home', {
+      .state('nav', {
+        abstract: true,
         url: '/',
+        templateUrl: 'app/nav/nav.html',
+        controller: 'NavController',
+        controllerAs: 'nav'
+      })
+      .state('nav.album', {
+        url: 'album',
         templateUrl: 'app/album/album.html',
         controller: 'AlbumController',
         controllerAs: 'album'
       });
 
-    $urlRouterProvider.otherwise('/');
   }
 
 })();
