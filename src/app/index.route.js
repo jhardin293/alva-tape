@@ -22,6 +22,12 @@
         templateUrl: 'app/album/album.html',
         controller: 'AlbumController',
         controllerAs: 'album'
+      })
+      .state('nav.artist', {
+        url: 'artist',
+        templateUrl: 'app/artist/artist.html',
+        controller: 'ArtistController',
+        controllerAs: 'artist'
       });
 
   }
