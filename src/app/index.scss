@@ -5,7 +5,6 @@
 // bower:scss
 // endbower
 
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
 
 html {
   font-family: 'proxima-nova', sans-serif;
@@ -70,6 +69,9 @@ $action-teal: #00D39B;
 $wavey-blue: #386E9C;
 $line-grey: #979797;
 
+.action-button, .sub-action{
+  background-color: $action-teal !important;
+}
 
 
 /**
