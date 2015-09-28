@@ -13,55 +13,16 @@ body,html{
   height: 100%;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
 [layout=row] {
   flex-direction: row;
 }
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-.thumbnail {
-  height: 200px;
-
-  img.pull-right {
-    width: 50px;
-  }
-}
-
-md-toolbar.md-default-theme {
-  background-color: black;
-}
-
-section.jumbotron {
-  margin-bottom: 30px;
-  padding: 1px 30px;
-  background-color: #5aadbb;
-  text-align: center;
-
-  color: white;
-
-  h1 {
-    font-size: 3em;
-  }
-}
-
-.techs {
-  display: flex;
-  flex-flow: row wrap;
-
-  md-card {
-    width: 30%;
-
-    img.pull-right {
-      float: right;
-      width: 50px;
-    }
-  }
-}
 
 /* Colors */
 $purple: #27153D;
@@ -72,6 +33,63 @@ $line-grey: #979797;
 .action-button, .sub-action{
   background-color: $action-teal !important;
 }
+
+.header-image{
+  margin: 0;
+  position: relative;
+
+  .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.41);
+  }
+
+  .header-meta{
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+    color: #FFFFFF;
+
+    h1{
+      line-height: 23px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    p{
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 120%;
+      color: #FFFFFF;
+    }
+
+  }
+}
+
+.social-button{
+  position: absolute;
+  top: -36px;
+  right: 0;
+
+}
+
+.social-options{
+  position: absolute;
+  top: -193px;
+  right: 11px;
+}
+
+.content-body{
+  h1{
+    font-weight: normal;
+    padding-left: 15px;
+    font-size: 150%;
+    margin-bottom: 4px;
+  }
+}
+
 
 
 /**

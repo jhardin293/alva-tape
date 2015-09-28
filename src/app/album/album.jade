@@ -1,13 +1,14 @@
-.artist-view(layout='column')
+.album-view(layout='column')
   md-content
       md-card.card-image.header-image
-        img(src='../../assets/images/toki.jpg')
+        img(src='../../assets/images/tokimonsta_halfshadows.jpg')
         .overlay
         .header-meta
-          h1 TokiMonsta
+          h1 Half Shadows
+          a(ui-sref="nav.artist"): p By TokiMonsta
       .content-wrapper
         .social-action
-          md-fab-speed-dial(md-open='false',md-direction='up', ng-class='artist.selectedMode')
+          md-fab-speed-dial(md-open='false',md-direction='up', ng-class='album.selectedMode')
             md-fab-trigger
               md-button.md-fab.md-warn.action-button.social-button(aria-label='social')
                 md-icon(md-svg-src='../../assets/icons/social.svg')
@@ -19,9 +20,10 @@
               md-button.md-fab.md-raised.md-mini.sub-action
                 md-icon(md-svg-src='../../assets/icons/snapchat.svg',aria-label='snapchat')
         .content-body
-          h1 Albums
-          .albums(layout='row' layout-wrap)
-            md-card.card-image(ng-repeat='album in artist.albums', flex='33.33', ng-click='artist.albumPage()')
-                img(ng-src='{{album.cover}}')
-                md-card-content
-                  h2 {{album.title}}
+          h1 Stream
+          md-list.list-body
+            md-list-item.stream-content(md-ink-ripple, layout="row", ng-repeat='service in album.streamingServices')
+              img.md-avatar(ng-src='{{service.logo}}')
+              .md-list-item-text(layout="column")
+                p {{service.name}}
+

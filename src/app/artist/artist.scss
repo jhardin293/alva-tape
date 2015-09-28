@@ -1,13 +1,19 @@
 .artist-view{
+
   .artist-background{
     background: url(../../assets/images/toki.jpg) no-repeat top center fixed;
     background-size: cover;
     height: 100%;
     width: 100%;
   }
-  .cont{
-    margin-top: 300px;
-    height: 100%;
-    width: 100%;
+
+  .albums{
+    md-card-content{
+      padding: 6px;
+    }
+    h2{
+      font-size: 70%;
+    }
   }
+
 }
