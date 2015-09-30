@@ -21,7 +21,14 @@
         .content-body
           h1 Albums
           .albums(layout='row' layout-wrap)
-            md-card.card-image(ng-repeat='album in artist.albums', flex='33.33', ng-click='artist.albumPage()')
+            md-card.card-image(ng-repeat='album in artist.albums', flex='33.33', ng-click='artist.albumPage(album.title)')
                 img(ng-src='{{album.cover}}')
                 md-card-content
                   h2 {{album.title}}
+           h1
+             | Songs
+           md-list.list-body
+             md-list-item.item-content(md-ink-ripple, layout='row', ng-repeat='song in artist.songs')
+               img.md-avatar(ng-src='{{song.cover}}')
+               .md-list-item-text(layout='column')
+                 p {{ song.title }}

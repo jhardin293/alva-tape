@@ -88,6 +88,16 @@ $line-grey: #979797;
     font-size: 150%;
     margin-bottom: 4px;
   }
+
+  .list-body{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .item-content{
+    padding-left: 0 !important;
+    border-top: 1px solid rgba(151, 151, 151, 0.3);
+  }
 }
 
 

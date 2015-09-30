@@ -17,7 +17,14 @@
       { title: 'Cosmic Intoxication', cover: '../../assets/images/cosmic-intoxica.jpg'},
     ];
 
-    vm.albumPage = function(){
+    vm.songs = [
+      { title: 'Pinching', cover: '../../assets/images/Pinching.jpg' },
+      { title: 'Rock The Float (Aaliyah flip)', cover: '../../assets/images/Rock The Float (Aaliyah flip).jpg' },
+      { title: 'Once Was Love', cover: '../../assets/images/Once Was Love.jpg' },
+      { title: 'Heartbreaker (io echo x TOKiMONSTA)', cover: '../../assets/images/Heartbreaker (io echo x TOKiMONSTA).jpg' },
+    ];
+
+    vm.albumPage = function(title){
       $state.go('nav.album');
     }
 

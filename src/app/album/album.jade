@@ -22,7 +22,7 @@
         .content-body
           h1 Stream
           md-list.list-body
-            md-list-item.stream-content(md-ink-ripple, layout="row", ng-repeat='service in album.streamingServices')
+            md-list-item.item-content(md-ink-ripple, layout="row", ng-repeat='service in album.streamingServices')
               img.md-avatar(ng-src='{{service.logo}}')
               .md-list-item-text(layout="column")
                 p {{service.name}}
