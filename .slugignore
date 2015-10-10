@@ -1,6 +1,6 @@
-/Design
-/bower_components
-/node_modules
-/Insperation
+Design/
+bower_components/
+node_modules/
+Insperation/
 desription.txt
 dev-notes.txt
