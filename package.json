@@ -4,7 +4,8 @@
   "scripts": {
     "start": "node gulpfile.js",
     "build": "gulp",
-    "test": "gulp test"
+    "test": "gulp test",
+    "postinstall": "bower install"
   },
   "dependencies": {
     "gulp": "~3.9.0",
