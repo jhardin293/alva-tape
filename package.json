@@ -2,6 +2,7 @@
   "name": "alvaTape",
   "version": "0.0.0",
   "scripts": {
+    "start": "node gulpfile.js",
     "build": "gulp",
     "test": "gulp test"
   },
