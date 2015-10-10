@@ -2,5 +2,10 @@ Design/
 bower_components/
 node_modules/
 Insperation/
+e2e/
+karma.conf.js
+protractor.conf.js
+README.md
 desription.txt
 dev-notes.txt
+
