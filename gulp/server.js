@@ -3,6 +3,8 @@
 var path = require('path');
 var gulp = require('gulp');
 var conf = require('./conf');
+var express = require('express');
+var app = express();
 
 var browserSync = require('browser-sync');
 var browserSyncSpa = require('browser-sync-spa');
@@ -12,6 +14,8 @@ var util = require('util');
 var proxyMiddleware = require('http-proxy-middleware');
 
 function browserSyncInit(baseDir, browser) {
+  console.log('baseDir:', baseDir);
+  console.log('browser:', browser);
   browser = browser === undefined ? 'default' : browser;
 
   var routes = null;
@@ -52,6 +56,19 @@ gulp.task('serve', ['watch'], function () {
 
 gulp.task('serve:dist', ['build'], function () {
   browserSyncInit(conf.paths.dist);
+});
+
+gulp.task('serve:production', ['build'], function () {
+  app.use(express.static(__dirname + '/dist'))
+  app.set('port', (process.env.PORT || 5000));
+  app.set('views', __dirname + '../src/')
+  app.get('/', function(request, response) {
+    response.send('<h1> HELLO WORLD </h2>');
+  })
+  app.listen(app.get('port'), function() {
+    console.log('app is running on port', app.get('port'));
+  })
+  //browserSyncInit(conf.paths.dist);
 });
 
 gulp.task('serve:e2e', ['inject'], function () {
