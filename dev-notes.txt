@@ -1,0 +1,6 @@
+Dev TODO
+- Change album view background and title, when a user clicks on album from the artist view
+- Create live links for, social, songs and streaming services 
+- Deploy to heroku  
+nice to have
+Create a service that resizes images to fit album/song container.
