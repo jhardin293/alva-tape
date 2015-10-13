@@ -6,7 +6,8 @@
     .controller('AlbumController', AlbumController);
 
   /** @ngInject */
-  function AlbumController() {
+  function AlbumController($state) {
+    console.log($state);
     var vm = this;
 
     vm.selectedMode = 'md-fling';

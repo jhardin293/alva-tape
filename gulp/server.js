@@ -59,11 +59,12 @@ gulp.task('serve:dist', ['build'], function () {
 });
 
 gulp.task('serve:production', ['build'], function () {
-  app.use(express.static(__dirname + '/dist'))
   app.set('port', (process.env.PORT || 5000));
-  app.set('views', __dirname + '../src/')
+  console.log(__dirname, 'dir');
+  app.use(express.static(path.join(__dirname,'../dist')));
   app.get('/', function(request, response) {
-    response.send('<h1> HELLO WORLD </h2>');
+    console.log(path.join(__dirname,'../dist', 'index.html'), 'res');
+    response.sendFile(path.join(__dirname, '../dist', 'index.html'));
   })
   app.listen(app.get('port'), function() {
     console.log('app is running on port', app.get('port'));

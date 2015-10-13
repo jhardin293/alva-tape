@@ -25,7 +25,10 @@
     ];
 
     vm.albumPage = function(title){
-      $state.go('nav.album');
+      console.log(title);
+      $state.go('nav.album',
+        { albumTitle: 'test' }
+      );
     }
 
   }
