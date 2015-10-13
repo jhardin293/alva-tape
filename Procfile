@@ -1,1 +1,1 @@
-web: gulp build
+web: gulp serve:production
